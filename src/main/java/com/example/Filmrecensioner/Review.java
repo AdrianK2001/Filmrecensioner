@@ -15,34 +15,22 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long movieId;
-    //private String movieTitle;
     private String comment;
     private int rating;
 
-    public Review() {
-    }
+    public Long getId() { return id; }
 
-    public Long getMovieId() {
-        return movieId;
-    }
+    public void setId(Long id) { this.id = id; }
 
-    //public void setMovieTitle(String movieTitle) {
-    //    this.movieTitle = movieTitle;
-    //}
+    public Long getMovieId() { return movieId; }
 
-    public int getRating() {
-        return rating;
-    }
+    public void setMovieId(Long movieId) { this.movieId = movieId; }
 
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
+    public String getComment() { return comment; }
 
-    public String getComment() {
-        return comment;
-    }
+    public void setComment(String comment) { this.comment = comment; }
 
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
+    public int getRating() { return rating; }
+
+    public void setRating(int rating) { this.rating = rating; }
 }

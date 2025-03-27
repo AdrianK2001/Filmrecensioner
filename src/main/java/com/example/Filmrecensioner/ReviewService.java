@@ -12,8 +12,8 @@ public class ReviewService {
     private final ReviewRepository reviewRepository;
     private final WebClient webClient;
 
-    @Value("${movieservice.url}")
-    private String movieServiceUrl;
+    @Value("http://localhost:8081")
+    private String movieServiceUrl = "http://localhost:8081";
 
     public ReviewService(ReviewRepository reviewRepository, WebClient.Builder webClientBuilder) {
         this.reviewRepository = reviewRepository;

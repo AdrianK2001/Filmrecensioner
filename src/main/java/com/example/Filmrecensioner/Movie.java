@@ -6,7 +6,7 @@ import lombok.Setter;
 @Setter
 public class Movie {
     private Long id;
-    private Long title;
+    private String title;
 
     public Long getId(){
         return id;
