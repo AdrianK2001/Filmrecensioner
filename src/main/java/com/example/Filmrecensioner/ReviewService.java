@@ -38,7 +38,7 @@ public class ReviewService {
         if (movie == null) {
             throw new RuntimeException("Movie not found");
         }
-        review.setMovieTitle(movie.getTitle());
+        //review.setMovieTitle(movie.getTitle());
         return reviewRepository.save(review);
     }
 
